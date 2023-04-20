@@ -1,0 +1,89 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.dados-da-pagina{
+    color:  rgb(228, 245, 252);
+    font-family: 'Sarala', sans-serif;
+    margin: 36px;
+    padding: 45px 200px;
+    background-image: url(bolatec.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.formulario-completo{
+    border: groove 4px;
+    border-radius: 20px;
+    border-color: black;
+    line-height: 35px;
+    padding-left: 45px;
+    padding-top: 20px;
+    background-color: black;
+}
+
+.dados-do-usuario-titulo{
+    font-size: 25px;
+    font-weight: 500;
+    gap: 15px;
+}
+
+.dados-do-usuario-nome{
+    font-size: 18px;
+    font-weight: 300;
+    gap: 15px;
+}
+
+.dados-do-usuario-email{
+    font-size: 18px;
+    font-weight: 300;
+    gap: 15px;
+
+}
+
+.dados-do-usuario-telefone{
+    font-size: 18px;
+    font-weight: 300;
+    gap: 15px;
+}
+
+.dados-profissional-pergunta{
+    font-size: 25px;
+    font-weight: 500;
+    gap: 15px;
+}
+
+.dados-area-interesse-pergunta{
+    font-size: 25px;
+    font-weight: 500;
+    gap: 15px;
+}
+
+.dados-area-interesse-item{
+    font-size: 18px;
+    font-weight: 300;
+    gap: 15px;
+}
+.rodape-conferir-dados{
+    font-size: 16px;
+    font-weight: 500;
+    gap: 15px;
+    color: yellow;
+    padding-right: 20px;
+
+}
+
+.home{
+    font-size: 17px;
+    font-weight: 500;
+    color: aliceblue;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    border-radius: 10px;
+    border-color: blue;
+}

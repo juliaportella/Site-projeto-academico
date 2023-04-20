@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family= Righteous & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #334594 16.62%, #9da5eb 85.61%);
+    background-attachment: fixed;
+}
+
+.cabecalho{
+    margin-bottom: 25px;
+    display: flex; /* organiza os elementos dentro de um bloco*/
+    flex-direction: row; /*serve para colocar os elementos na mesma linha*/
+    align-items: center;
+    justify-content: space-around; /*serve para dar um espaço entre os elementos numa mesma linha*/
+    padding-top: 25px;
+}
+
+.cabecalho-imagem{
+    height: 45px;
+    border-radius: 100%; color: rgb(220, 251, 252) 3px;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 32px;
+    font-family: 'Sarala', sans-serif;
+    color: rgb(228, 245, 252);
+    font-weight: 400;
+    font-size: 24px;
+    position: relative;
+}
+
+.cabecalho-menu-item{
+    color: rgb(220, 251, 252);
+    cursor: pointer;
+}
+
+.conteudo{
+    margin-bottom: 48px;
+    border-top: 0.5px solid rgb(228, 245, 252)
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 48px;
+}
+
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    color: rgb(228, 245, 252);
+    gap: 32px; /* serve para dar espaçamento entre as linhas*/
+}
+
+.conteudo-principal-escrito-titulo{
+    font-family: 'Quantico', sans-serif;
+    font-weight: 450; /*quanto maior o numero, mais negrito fica*/
+    font-size: 64px;
+    color:  rgb(228, 245, 252);
+}
+
+.conteudo-principal-escrito-subtitulo{
+    font-family: 'Quantico', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: rgb(228, 245, 252);
+}
+
+.conteudo-principal-botao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(228, 245, 252);
+    border: none;
+    height: 60px;
+    width: 180px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #121958;
+}
+
+.conteudo-principal-imagem{
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;
+    padding: 5px;
+}
+
+.conteudo-secundario{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.conteudo-secundario-pergunta{
+    font-family: 'Quantico', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: rgb(228, 245, 252);
+    padding-bottom: 35px;
+    margin-top: 120px;
+}
+
+.conteudo-secundario-item{
+    display: flex;
+    font-family: 'Sarala', sans-serif;
+    color: rgb(228, 245, 252);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.rodape-texto{
+    font-family: 'Sarala', sans-serif;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 48px;
+}
+
+/*Com todo o conteúdo estudado até agora, abra sua homepage do site (página principal) 
+aplique o Design Responsivo para a largura do dispositivo do celular (480px).*/
+
+@media screen and (max-width: 480px) {
+
+.cabecalho{
+    background-image: url(bolatec.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1em;
+    margin: 0em;
+}
+
+.cabecalho-imagem{
+    display: none;
+    visibility: hidden;
+    }
+
+.cabecalho-menu{
+    gap: 2em;
+    font-size: 1.2em;
+    position: relative;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.conteudo{
+    margin-bottom: 3em;
+    border-top:0.03125em solid rgb(228, 245, 252)
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    font-size: 1.5em;
+
+}
+
+.conteudo-principal-escrito-titulo{
+    padding-top: 1em;
+    font-size: 2em;
+    margin-left: 1.6em;
+    flex-direction: row;
+}
+
+.conteudo-principal-escrito-subtitulo{
+    font-size: 1em;
+    text-align: center;
+    padding-right: 1.5em;
+}
+
+.conteudo-principal-botao{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 2em;
+    width: 8em;
+    box-shadow: 0.25em 0.3125em 0.25em rgba(0, 0, 0, 0.25);
+    border-radius: 1.25em;
+    font-weight: 600;
+    font-size: 1em;
+    margin-left: 4em;
+}
+
+.conteudo-principal-imagem{
+    display: none;
+    visibility: hidden;
+}
+
+
+.conteudo-secundario-pergunta{
+    font-size: 1.8em;
+    padding-bottom: 2.1em;
+    margin-top: 4em;
+    text-align: center;
+}
+
+.conteudo-secundario-item{
+    font-size: 1.20em;
+    margin-left: 1em;
+    margin-right: 1em;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+}
+    
+}

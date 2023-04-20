@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<!--o objetivo é desenvolver a terceira página com FORMULÁRIO que aparecerá após clicar no link de CONTATO. OK -->
+<body class="dados-da-pagina">
+    <!--Você deverá desenvolver um formulário como terceira página, utilizando uma tabela (para ajustes
+    de alinhamento dos campos) em uma página separada, com, no mínimo, seis campos de tipos diferentes
+    de formulário e atributos vistos nas aulas, de maneira que haja controle das informações futuras enviadas.
+    O conteúdo e o layout desta página são de sua escolha, desde que tenham a quantidade de campos de tipos diferentes com os atributos.-->
+    <form method="get" class="formulario-completo">
+        <legend class="dados-do-usuario-titulo">Dados pessoais</legend>
+        <label class="dados-do-usuario-nome">Qual seu nome completo?</label><br>
+        <input type="text" maxlength="30"><br>
+        <Label class="dados-do-usuario-email">Insira seu melhor Email:</Label><br>
+        <input type="email" maxlength="50"><br>
+        <label class="dados-do-usuario-telefone">Telefone:</label><br>
+        <input placeholder="(xx) 9xxxx-xxxx" maxlength="11"><br><br>
+        <legend class="dados-profissional-pergunta">Você já teve contato com programação?</legend>
+        <input type="radio" id="Sim" name="contato" value="Sim">
+        <label for="Sim">Sim</label><br>
+        <input type="radio" id="Não" name="contato" value="Não">
+        <label for="Não">Não</label><br><br>
+        <legend class="dados-area-interesse-pergunta">Quais destas áreas são de seu maior interesse?</legend>
+        <input type="checkbox" id="áreas" name="áreas" value="Cyber segurança">
+        <label for="áreas" class="dados-area-interesse-item">Cyber segurança</label><br>
+        <input type="checkbox" id="áreas" name="áreas" value="Desenvolvimento back-end">
+        <label for="áreas" class="dados-area-interesse-item">Desenvolvimento back-end</label><br>
+        <input type="checkbox" id="áreas" name="áreas" value="Desenvolvimento front-end">
+        <label for="áreas" class="dados-area-interesse-item">Desenvolvimento front-end</label><br>
+        <input type="checkbox" id="áreas" name="áreas" value="Banco de dados">
+        <label for="áreas" class="dados-area-interesse-item">Banco de dados</label><br><br>
+
+        <p class="rodape-conferir-dados">
+            <b>Antes de seguir, confira se as informações estão corretas, se sim, clique em "enviar".</b><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar tudo">
+        </p><br>
+
+        <a href="index.html" class="home"><u>Voltar ao início</u></a>
+    </form>
+</body>
