@@ -130,14 +130,12 @@ body{
     justify-content: center;
     text-align: center;
     gap: 12px;
-}
-
-.rodape-texto{
-    font-family: 'Sarala', sans-serif;
-    color: black;
+    color: white;
     font-weight: 400;
     font-size: 16px;
     margin-top: 48px;
+    font-family: 'Sarala', sans-serif;
+
 }
 
 /*Com todo o conteúdo estudado até agora, abra sua homepage do site (página principal) 
