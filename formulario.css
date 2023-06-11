@@ -87,3 +87,16 @@ input{
     border-radius: 10px;
     border-color: blue;
 }
+
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 48px;
+    font-family: 'Sarala', sans-serif;
+}
